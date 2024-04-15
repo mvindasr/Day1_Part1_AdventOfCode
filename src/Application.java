@@ -76,11 +76,11 @@ public class Application {
 
             // Find first and last digits...
             while (matcher.find()) {
-                int digito = Integer.parseInt(matcher.group());
+                int digit = Integer.parseInt(matcher.group());
                 if (firstDigit == -1) {
-                    firstDigit = digito;
+                    firstDigit = digit;
                 }
-                lastDigit = digito;
+                lastDigit = digit;
             }
 
             // Combine first and last digit to form individual calibration number...
